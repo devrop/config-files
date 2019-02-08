@@ -1,6 +1,6 @@
 
 server:
-  port: 6000
+  port: 6001
 eureka:
   client:
     serviceUrl:
