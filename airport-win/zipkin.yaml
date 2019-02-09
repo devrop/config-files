@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://${MYSQL_HOST:192.168.99.100}/zipkin?autoReconnect=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: root
+    password: 1234
     initialize: true
     continue-on-error: true
   sleuth:
