@@ -1,0 +1,5 @@
+zuul:
+  routes:
+    demoone:
+      path: /api/demoone/**
+      serviceId : demoone
