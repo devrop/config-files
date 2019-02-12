@@ -5,3 +5,6 @@ zuul:
     demoone:
       path: /api/demoone/**
       serviceId : demoone
+    login:
+      path:/api/login/**
+      serviceId : login
