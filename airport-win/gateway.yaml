@@ -1,0 +1,10 @@
+server:
+   port: 8888
+zuul:
+  routes:
+    demoone:
+      path: /api/demoone/**
+      serviceId : demoone
+    login:
+      path: /api/login/**
+      serviceId : login
