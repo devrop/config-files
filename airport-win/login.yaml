@@ -1,13 +1,13 @@
 spring:
   datasource:
-      url: jdbc:postgresql://ec2-174-129-18-247.compute-1.amazonaws.com:5432/d9eqj8lljnu1op?sslmode=require
-      username: irtgtfniowbbld
-      password: e82f572a7f14d18162773c46beee9039998a1ad2db1c808787accfd2f79e1f6b
-      driver-class-name: org.postgresql.Driver
+      url: jdbc:mysql://${MYSQL_HOST:192.168.99.100}/dev?autoReconnect=true
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
       properties:
             hibernate:
-                  dialect: org.hibernate.dialect.ProgressDialect
+                  dialect: org.hibernate.dialect.MySQLDialect
                   format_sql: true
                   id:
                    new_generator_mappings: false
