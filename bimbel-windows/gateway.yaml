@@ -65,3 +65,8 @@ zuul:
   host:
     connectTimeoutMillis: 3000
     socketTimeoutMillis: 3000
+proxy:
+   auth:
+     routes:
+       subjects: oauth2
+       teachers: oauth2
