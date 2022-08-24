@@ -1,12 +1,11 @@
 server:
   port: 8888
 
-
 spring:
   r2dbc:
-    url:r2dbc:postgresql://localhost:5432/postgres
-    username:ropandi
-    password:roP123.
+    url: r2dbc:postgresql://localhost:5432/postgres
+    username: ropandi
+    password: roP123.
     pool:
-       initialSize:2
-       maxSize:2
+     initialSize: 2
+     maxSize: 2
