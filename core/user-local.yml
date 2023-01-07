@@ -13,9 +13,9 @@ eureka:
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 spring:
    datasource:
-    url: 'jdbc:sqlserver://localhost;databaseName=fin_core'
+    url: 'jdbc:sqlserver://localhost;databaseName=E00_CORE'
     username: sa
-    password=1234
+    password: ropandi1234!
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
    jpa:
     database-platform: org.hibernate.dialect.SQLServer2012Dialect
