@@ -1,5 +1,7 @@
 server:
   port: 50001
+  servlet:
+   context-path: /user
 
 eureka:
   client:
@@ -9,6 +11,17 @@ eureka:
     statusPageUrlPath: /info
     healthCheckUrlPath: /health
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+spring:
+   datasource:
+    url: 'jdbc:sqlserver://localhost;databaseName=fin_core'
+    username: sa
+    password=1234
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+   jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    show-sql: false
+    hibernate:
+      ddl-auto: none
 mybatis:
   mapper-locations: classpath*:/sql/sql-*.xml
   type-aliases-package: ropandi.user.entity,ropandi.user.dto
