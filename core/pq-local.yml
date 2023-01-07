@@ -10,7 +10,7 @@ eureka:
     healthCheckUrlPath: /health
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 wso2:
-base-url: 'http://127.0.0.1:8280/pq'
+  base-url: 'http://127.0.0.1:8280/pq'
   
     
   
