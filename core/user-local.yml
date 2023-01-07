@@ -24,7 +24,7 @@ spring:
       ddl-auto: none
 mybatis:
   mapper-locations: classpath*:/sql/sql-*.xml
-  type-aliases-package: ropandi.user.entity,ropandi.user.dto
+  type-aliases-package: ropandi.user.model.entity,ropandi.user.model.dto
   
     
   
