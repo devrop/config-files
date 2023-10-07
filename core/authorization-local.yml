@@ -32,7 +32,10 @@ spring:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         id:
          new_generator_mappings: false
-        format_sql: true  
+        format_sql: true
+  cloud:
+    discovery:
+     enabled: false        
 #custom
 jwt:
   keySecret: SewrtnjlbadaydywttgaggGGRRRghashsbshhsgfgrRRRTATgahahbBKKAJANnhyattara545637abgBbBBNAvgagyt
