@@ -39,7 +39,7 @@ spring:
 #custom
 jwt:
   keySecret: SewrtnjlbadaydywttgaggGGRRRghashsbshhsgfgrRRRTATgahahbBKKAJANnhyattara545637abgBbBBNAvgagyt
-  expirationInMilisecond: 3600000
+  expirationInMiliseconds: 3600000
 
   
     
