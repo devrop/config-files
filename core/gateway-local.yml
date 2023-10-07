@@ -1,11 +1,32 @@
 server:
   port: 8888
 
-spring:
-  r2dbc:
-    url: r2dbc:postgresql://localhost:5432/postgres
-    username: ropandi
-    password: roP123.
-    pool:
-     initialSize: 2
-     maxSize: 2
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+eureka:
+  instance:
+      leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
+
+gateway:
+  excludedURLsNew: /api/v1/users/authenticate,/login
