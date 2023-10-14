@@ -1,7 +1,7 @@
 server:
   port: 7777
   servlet:
-    context-path: oauth
+    context-path: /oauth
 eureka:
   client:
     serviceUrl:
